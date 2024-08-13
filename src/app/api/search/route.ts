@@ -1,68 +1,84 @@
-import {
-  getCourseCategories,
-  getCourses,
-  getLessons,
-  getLessonContent,
-} from "@/lib/api";
+import { NextResponse } from "next/server";
+import { buildSearchIndex } from "@/lib/api";
+
+const searchIndex = buildSearchIndex();
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const query = searchParams.get("q");
 
   if (!query) {
-    return new Response(
-      JSON.stringify({
-        error: "Query parameter is required",
-      }),
-      {
-        status: 400,
-        headers: {
-          "Content-Type": "application/json",
-        },
-      }
+    return NextResponse.json(
+      { error: "Query parameter is required" },
+      { status: 400 }
     );
   }
 
-  const results = [];
-  const categories = getCourseCategories();
-
-  for (const category of categories) {
-    const courses = getCourses(category);
-    for (const course of courses) {
-      const lessons = getLessons(
-        category,
-        course
-      );
-      for (const lesson of lessons) {
-        const { data, content } =
-          getLessonContent(
-            category,
-            course,
-            lesson
+  const queryWords = query
+    .toLowerCase()
+    .split(/\W+/);
+  const results = searchIndex
+    .map((item) => {
+      const matchCount = queryWords.reduce(
+        (count, word) => {
+          return (
+            count +
+            (item.words.includes(word) ? 1 : 0)
           );
-        if (
-          data.title
-            .toLowerCase()
-            .includes(query.toLowerCase()) ||
-          content
-            .toLowerCase()
-            .includes(query.toLowerCase())
-        ) {
-          results.push({
-            title: data.title,
-            category,
-            course,
-            lesson,
-            url: `/courses/${category}/${course}/${lesson}`,
-          });
-        }
-      }
-    }
-  }
+        },
+        0
+      );
 
-  return new Response(JSON.stringify(results), {
-    headers: {
-      "Content-Type": "application/json",
-    },
-  });
+      return {
+        ...item,
+        matchCount,
+        relevance: matchCount / queryWords.length,
+      };
+    })
+    .filter((item) => item.matchCount > 0)
+    .sort((a, b) => b.relevance - a.relevance)
+    .map(
+      ({
+        title,
+        category,
+        course,
+        lesson,
+        url,
+        content,
+      }) => ({
+        title,
+        category,
+        course,
+        lesson,
+        url,
+        snippet: getSnippet(
+          content,
+          queryWords[0]
+        ),
+      })
+    );
+
+  return NextResponse.json(results.slice(0, 20)); // Limit to top 20 results
+}
+
+function getSnippet(
+  content: string,
+  keyword: string
+) {
+  const index = content
+    .toLowerCase()
+    .indexOf(keyword.toLowerCase());
+  if (index === -1)
+    return content.substring(0, 150) + "...";
+
+  const start = Math.max(0, index - 75);
+  const end = Math.min(
+    content.length,
+    index + 75
+  );
+  return (
+    (start > 0 ? "..." : "") +
+    content.substring(start, end) +
+    (end < content.length ? "..." : "")
+  );
 }

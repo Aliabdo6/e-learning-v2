@@ -69,3 +69,40 @@ export function getCourseInfo(
   );
   return JSON.parse(fileContents);
 }
+
+export function buildSearchIndex() {
+  const index = [];
+  const categories = getCourseCategories();
+
+  for (const category of categories) {
+    const courses = getCourses(category);
+    for (const course of courses) {
+      const lessons = getLessons(
+        category,
+        course
+      );
+      for (const lesson of lessons) {
+        const { data, content } =
+          getLessonContent(
+            category,
+            course,
+            lesson
+          );
+        const words = content
+          .toLowerCase()
+          .split(/\W+/);
+        index.push({
+          title: data.title,
+          category,
+          course,
+          lesson,
+          url: `/courses/${category}/${course}/${lesson}`,
+          content: content,
+          words: words,
+        });
+      }
+    }
+  }
+
+  return index;
+}

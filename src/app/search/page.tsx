@@ -10,38 +10,35 @@ interface SearchResult {
   course: string;
   lesson: string;
   url: string;
+  snippet: string;
 }
 
-export default function SearchResults() {
+export default function SearchPage() {
   const searchParams = useSearchParams();
   const query = searchParams.get("q");
   const [results, setResults] = useState<
     SearchResult[]
   >([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<
-    string | null
-  >(null);
 
   useEffect(() => {
     const fetchResults = async () => {
       setLoading(true);
-      setError(null);
       try {
         const response = await fetch(
           `/api/search?q=${encodeURIComponent(
             query || ""
           )}`
         );
-        if (!response.ok)
-          throw new Error(
-            "Failed to fetch search results"
-          );
+        if (!response.ok) {
+          throw new Error("Search failed");
+        }
         const data = await response.json();
         setResults(data);
-      } catch (err) {
-        setError(
-          "An error occurred while fetching search results"
+      } catch (error) {
+        console.error(
+          "Error fetching search results:",
+          error
         );
       } finally {
         setLoading(false);
@@ -53,47 +50,68 @@ export default function SearchResults() {
     }
   }, [query]);
 
-  if (loading)
-    return (
-      <div className="text-center py-8">
-        Loading...
-      </div>
-    );
-  if (error)
-    return (
-      <div className="text-center py-8 text-red-500">
-        {error}
-      </div>
-    );
-
   return (
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-3xl font-bold mb-6">
         Search Results for "{query}"
       </h1>
-      {results.length === 0 ? (
-        <p>No results found.</p>
-      ) : (
-        <ul className="space-y-4">
+      {loading ? (
+        <p>Loading...</p>
+      ) : results.length > 0 ? (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {results.map((result, index) => (
-            <li
-              key={index}
-              className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-4"
-            >
-              <Link
-                href={result.url}
-                className="text-xl font-semibold hover:text-blue-500"
-              >
-                {result.title}
-              </Link>
-              <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
-                {result.category} &gt;{" "}
-                {result.course} &gt;{" "}
-                {result.lesson}
-              </p>
-            </li>
+            <Link href={result.url} key={index}>
+              <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+                <h2 className="text-xl font-semibold mb-2">
+                  {result.title}
+                </h2>
+                <p className="text-sm text-gray-600 dark:text-gray-300 mb-2">
+                  {result.category} /{" "}
+                  {result.course}
+                </p>
+                <p className="text-gray-700 dark:text-gray-200">
+                  {result.snippet
+                    .split(
+                      new RegExp(
+                        `(${query})`,
+                        "gi"
+                      )
+                    )
+                    .map((part, i) =>
+                      part.toLowerCase() ===
+                      query?.toLowerCase() ? (
+                        <mark
+                          key={i}
+                          className="bg-yellow-200 dark:bg-yellow-800"
+                        >
+                          {part}
+                        </mark>
+                      ) : (
+                        part
+                      )
+                    )}
+                </p>
+              </div>
+            </Link>
+
+            // <Link href={result.url} key={index}>
+            //   <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
+            //     <h2 className="text-xl font-semibold mb-2">
+            //       {result.title}
+            //     </h2>
+            //     <p className="text-sm text-gray-600 dark:text-gray-300 mb-2">
+            //       {result.category} /{" "}
+            //       {result.course}
+            //     </p>
+            //     <p className="text-gray-700 dark:text-gray-200">
+            //       {result.snippet}
+            //     </p>
+            //   </div>
+            // </Link>
           ))}
-        </ul>
+        </div>
+      ) : (
+        <p>No results found.</p>
       )}
     </div>
   );
