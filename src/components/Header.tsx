@@ -55,12 +55,6 @@ export default function Header() {
         <div className="flex items-center justify-between">
           <Logo />
           <div className="hidden md:flex items-center space-x-4">
-            <Link
-              href="/forum"
-              className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-            >
-              Forum
-            </Link>
             <SearchBar />
             {mounted && (
               <button
@@ -93,12 +87,6 @@ export default function Header() {
         {isOpen && (
           <div className="mt-4 md:hidden">
             <SearchBar />
-            <Link
-              href="/forum"
-              className="block text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-            >
-              Forum
-            </Link>
             {mounted && (
               <button
                 onClick={() =>
@@ -133,6 +121,12 @@ export default function Header() {
 // import { useState, useEffect } from "react";
 // import Link from "next/link";
 // import { useTheme } from "next-themes";
+// import {
+//   SignedOut,
+//   SignInButton,
+//   SignedIn,
+//   UserButton,
+// } from "@clerk/nextjs";
 // import SearchBar from "./SearchBar";
 // import Logo from "./Logo";
 
@@ -179,6 +173,12 @@ export default function Header() {
 //         <div className="flex items-center justify-between">
 //           <Logo />
 //           <div className="hidden md:flex items-center space-x-4">
+//             <Link
+//               href="/forum"
+//               className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+//             >
+//               Forum
+//             </Link>
 //             <SearchBar />
 //             {mounted && (
 //               <button
@@ -194,6 +194,12 @@ export default function Header() {
 //                 {theme === "dark" ? "🌞" : "🌙"}
 //               </button>
 //             )}
+//             <SignedOut>
+//               <SignInButton />
+//             </SignedOut>
+//             <SignedIn>
+//               <UserButton />
+//             </SignedIn>
 //           </div>
 //           <button
 //             onClick={() => setIsOpen(!isOpen)}
@@ -205,6 +211,12 @@ export default function Header() {
 //         {isOpen && (
 //           <div className="mt-4 md:hidden">
 //             <SearchBar />
+//             <Link
+//               href="/forum"
+//               className="block text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+//             >
+//               Forum
+//             </Link>
 //             {mounted && (
 //               <button
 //                 onClick={() =>
@@ -221,6 +233,12 @@ export default function Header() {
 //                   : "Switch to Dark Mode"}
 //               </button>
 //             )}
+//             <SignedOut>
+//               <SignInButton />
+//             </SignedOut>
+//             <SignedIn>
+//               <UserButton />
+//             </SignedIn>
 //           </div>
 //         )}
 //       </div>
