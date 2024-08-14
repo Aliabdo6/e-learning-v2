@@ -1,0 +1,200 @@
+{
+  "title": "Python for Data Science Quiz",
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple-choice",
+      "question": "Which Python library is most commonly used for data manipulation and analysis?",
+      "options": [
+        "NumPy",
+        "Pandas",
+        "Matplotlib",
+        "SciPy"
+      ],
+      "correctAnswer": 1,
+      "feedback": "Pandas is the most commonly used Python library for data manipulation and analysis, providing data structures like DataFrames for handling and analyzing data."
+    },
+    {
+      "id": 2,
+      "type": "multiple-choice",
+      "question": "Which function in Pandas is used to load a CSV file into a DataFrame?",
+      "options": [
+        "read_excel()",
+        "read_csv()",
+        "load_csv()",
+        "import_csv()"
+      ],
+      "correctAnswer": 1,
+      "feedback": "The read_csv() function in Pandas is used to load a CSV file into a DataFrame, which is a fundamental operation in data analysis."
+    },
+    {
+      "id": 3,
+      "type": "multiple-choice",
+      "question": "Which of the following libraries is used for data visualization in Python?",
+      "options": [
+        "TensorFlow",
+        "NumPy",
+        "Matplotlib",
+        "Scikit-learn"
+      ],
+      "correctAnswer": 2,
+      "feedback": "Matplotlib is a popular Python library used for data visualization, enabling the creation of a wide range of static, animated, and interactive plots."
+    },
+    {
+      "id": 4,
+      "type": "multiple-choice",
+      "question": "What does the 'head()' function in Pandas do?",
+      "options": [
+        "Displays the last 5 rows of a DataFrame",
+        "Displays the first 5 rows of a DataFrame",
+        "Removes null values from a DataFrame",
+        "Sorts the DataFrame by a specified column"
+      ],
+      "correctAnswer": 1,
+      "feedback": "The head() function in Pandas displays the first 5 rows of a DataFrame, making it useful for quickly inspecting the data."
+    },
+    {
+      "id": 5,
+      "type": "multiple-choice",
+      "question": "What is the purpose of the 'groupby()' function in Pandas?",
+      "options": [
+        "To group data by specified criteria and apply aggregation functions",
+        "To remove duplicate rows in a DataFrame",
+        "To merge two DataFrames",
+        "To filter data based on conditions"
+      ],
+      "correctAnswer": 0,
+      "feedback": "The groupby() function in Pandas is used to group data by specified criteria and apply aggregation functions such as sum, mean, or count."
+    },
+    {
+      "id": 6,
+      "type": "multiple-choice",
+      "question": "Which Python library is used for numerical computing and supports multi-dimensional arrays?",
+      "options": [
+        "Pandas",
+        "Seaborn",
+        "NumPy",
+        "Keras"
+      ],
+      "correctAnswer": 2,
+      "feedback": "NumPy is a Python library used for numerical computing, providing support for multi-dimensional arrays and a wide range of mathematical operations."
+    },
+    {
+      "id": 7,
+      "type": "multiple-choice",
+      "question": "What does the 'describe()' function in Pandas return?",
+      "options": [
+        "A summary of missing values in a DataFrame",
+        "A statistical summary of numerical columns",
+        "A list of unique values in a column",
+        "A correlation matrix"
+      ],
+      "correctAnswer": 1,
+      "feedback": "The describe() function in Pandas returns a statistical summary of numerical columns, including metrics like mean, median, and standard deviation."
+    },
+    {
+      "id": 8,
+      "type": "multiple-choice",
+      "question": "Which Python library is used for machine learning and data mining?",
+      "options": [
+        "Pandas",
+        "Scikit-learn",
+        "Matplotlib",
+        "Requests"
+      ],
+      "correctAnswer": 1,
+      "feedback": "Scikit-learn is a Python library used for machine learning and data mining, offering tools for classification, regression, clustering, and more."
+    },
+    {
+      "id": 9,
+      "type": "multiple-choice",
+      "question": "What does the 'dropna()' function in Pandas do?",
+      "options": [
+        "Removes rows with missing values",
+        "Removes columns with missing values",
+        "Both A and B",
+        "Fills missing values with zeros"
+      ],
+      "correctAnswer": 2,
+      "feedback": "The dropna() function in Pandas removes rows or columns with missing values, depending on the specified axis."
+    },
+    {
+      "id": 10,
+      "type": "multiple-choice",
+      "question": "How do you create a simple line plot in Matplotlib?",
+      "options": [
+        "plt.scatter()",
+        "plt.bar()",
+        "plt.line()",
+        "plt.plot()"
+      ],
+      "correctAnswer": 3,
+      "feedback": "The plt.plot() function in Matplotlib is used to create simple line plots, where 'plt' refers to the common alias for the Matplotlib pyplot module."
+    },
+    {
+      "id": 11,
+      "type": "multiple-choice",
+      "question": "Which method is used to handle missing data in a DataFrame by replacing them with the mean of the column?",
+      "options": [
+        "dropna()",
+        "fillna()",
+        "replace()",
+        "interpolate()"
+      ],
+      "correctAnswer": 1,
+      "feedback": "The fillna() function in Pandas can be used to handle missing data by replacing them with the mean, median, or other values."
+    },
+    {
+      "id": 12,
+      "type": "multiple-choice",
+      "question": "What does 'iloc' in Pandas stand for?",
+      "options": [
+        "Index location",
+        "Integer location",
+        "Information location",
+        "Item location"
+      ],
+      "correctAnswer": 1,
+      "feedback": "iloc in Pandas stands for 'integer location' and is used for selecting rows and columns by their integer-based index positions."
+    },
+    {
+      "id": 13,
+      "type": "multiple-choice",
+      "question": "What is Seaborn primarily used for?",
+      "options": [
+        "Data cleaning",
+        "Data visualization",
+        "Data import",
+        "Web scraping"
+      ],
+      "correctAnswer": 1,
+      "feedback": "Seaborn is a Python library built on top of Matplotlib that is primarily used for data visualization, offering attractive and informative statistical graphics."
+    },
+    {
+      "id": 14,
+      "type": "multiple-choice",
+      "question": "Which of the following is a common Python environment used for data science?",
+      "options": [
+        "Django",
+        "Flask",
+        "Jupyter Notebook",
+        "PyCharm"
+      ],
+      "correctAnswer": 2,
+      "feedback": "Jupyter Notebook is a popular Python environment for data science, allowing users to write and execute code, visualize data, and document their analysis in an interactive format."
+    },
+    {
+      "id": 15,
+      "type": "multiple-choice",
+      "question": "What is the main purpose of the 'pivot_table()' function in Pandas?",
+      "options": [
+        "To merge two DataFrames",
+        "To reshape data for analysis",
+        "To filter rows based on a condition",
+        "To plot data"
+      ],
+      "correctAnswer": 1,
+      "feedback": "The pivot_table() function in Pandas is used to reshape data for analysis, summarizing data by aggregating values based on one or more keys."
+    }
+  ]
+}

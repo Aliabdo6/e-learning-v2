@@ -1,0 +1,200 @@
+{
+  "title": "HTML Basics and Concepts Quiz",
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple-choice",
+      "question": "What does HTML stand for?",
+      "options": [
+        "Hyperlinks and Text Markup Language",
+        "Hypertext Markup Language",
+        "Home Tool Markup Language",
+        "Hyperlinking Text Markup Language"
+      ],
+      "correctAnswer": 1,
+      "feedback": "HTML stands for Hypertext Markup Language and is used to create the structure of web pages."
+    },
+    {
+      "id": 2,
+      "type": "multiple-choice",
+      "question": "Which HTML tag is used to define the most important heading?",
+      "options": [
+        "<heading>",
+        "<h6>",
+        "<h1>",
+        "<head>"
+      ],
+      "correctAnswer": 2,
+      "feedback": "The <h1> tag is used to define the most important heading, with <h6> being the least important."
+    },
+    {
+      "id": 3,
+      "type": "multiple-choice",
+      "question": "Which HTML element is used to create a hyperlink?",
+      "options": [
+        "<link>",
+        "<a>",
+        "<href>",
+        "<hyperlink>"
+      ],
+      "correctAnswer": 1,
+      "feedback": "The <a> tag is used to create hyperlinks in HTML. The href attribute specifies the URL of the page the link goes to."
+    },
+    {
+      "id": 4,
+      "type": "multiple-choice",
+      "question": "What is the purpose of the <alt> attribute in an <img> tag?",
+      "options": [
+        "To specify the width of the image",
+        "To provide alternate text for an image if it cannot be displayed",
+        "To specify the alignment of the image",
+        "To provide a link to the image"
+      ],
+      "correctAnswer": 1,
+      "feedback": "The <alt> attribute provides alternate text for an image, which is important for accessibility and in cases where the image cannot be displayed."
+    },
+    {
+      "id": 5,
+      "type": "multiple-choice",
+      "question": "Which tag is used to define a paragraph in HTML?",
+      "options": [
+        "<p>",
+        "<para>",
+        "<pg>",
+        "<text>"
+      ],
+      "correctAnswer": 0,
+      "feedback": "The <p> tag is used to define paragraphs in HTML."
+    },
+    {
+      "id": 6,
+      "type": "multiple-choice",
+      "question": "Which of the following is NOT a valid HTML tag?",
+      "options": [
+        "<div>",
+        "<span>",
+        "<section>",
+        "<container>"
+      ],
+      "correctAnswer": 3,
+      "feedback": "The <container> tag is not a valid HTML tag. The other options are valid tags used in HTML."
+    },
+    {
+      "id": 7,
+      "type": "multiple-choice",
+      "question": "How do you create an unordered list in HTML?",
+      "options": [
+        "<ul>",
+        "<ol>",
+        "<li>",
+        "<list>"
+      ],
+      "correctAnswer": 0,
+      "feedback": "The <ul> tag is used to create an unordered list, with each list item defined by the <li> tag."
+    },
+    {
+      "id": 8,
+      "type": "multiple-choice",
+      "question": "Which attribute is used to open a hyperlink in a new tab or window?",
+      "options": [
+        "target='_new'",
+        "target='_tab'",
+        "target='_self'",
+        "target='_blank'"
+      ],
+      "correctAnswer": 3,
+      "feedback": "The 'target=\"_blank\"' attribute is used to open a hyperlink in a new tab or window."
+    },
+    {
+      "id": 9,
+      "type": "multiple-choice",
+      "question": "What does the <br> tag do in HTML?",
+      "options": [
+        "Creates a break between sections",
+        "Creates a horizontal line",
+        "Inserts a line break",
+        "Inserts a blank space"
+      ],
+      "correctAnswer": 2,
+      "feedback": "The <br> tag inserts a line break, which moves the following content to a new line."
+    },
+    {
+      "id": 10,
+      "type": "multiple-choice",
+      "question": "Which HTML tag is used to define an internal style sheet?",
+      "options": [
+        "<style>",
+        "<css>",
+        "<script>",
+        "<link>"
+      ],
+      "correctAnswer": 0,
+      "feedback": "The <style> tag is used to define internal styles within an HTML document."
+    },
+    {
+      "id": 11,
+      "type": "multiple-choice",
+      "question": "Which HTML element is used to specify a footer for a document or section?",
+      "options": [
+        "<bottom>",
+        "<section>",
+        "<footer>",
+        "<foot>"
+      ],
+      "correctAnswer": 2,
+      "feedback": "The <footer> element is used to specify a footer for a document or a section within a document."
+    },
+    {
+      "id": 12,
+      "type": "multiple-choice",
+      "question": "Which of the following tags is used to create a table in HTML?",
+      "options": [
+        "<table>",
+        "<tr>",
+        "<td>",
+        "All of the above"
+      ],
+      "correctAnswer": 3,
+      "feedback": "All of the options are part of creating a table in HTML: <table> defines the table, <tr> defines a row, and <td> defines a cell."
+    },
+    {
+      "id": 13,
+      "type": "multiple-choice",
+      "question": "What is the purpose of the <meta> tag in HTML?",
+      "options": [
+        "To define the document title",
+        "To include metadata about the HTML document",
+        "To link to an external CSS file",
+        "To create a section"
+      ],
+      "correctAnswer": 1,
+      "feedback": "The <meta> tag is used to include metadata about the HTML document, such as the character set, author, and description."
+    },
+    {
+      "id": 14,
+      "type": "multiple-choice",
+      "question": "Which tag is used to create a drop-down list in HTML?",
+      "options": [
+        "<input>",
+        "<select>",
+        "<dropdown>",
+        "<list>"
+      ],
+      "correctAnswer": 1,
+      "feedback": "The <select> tag is used to create a drop-down list in HTML."
+    },
+    {
+      "id": 15,
+      "type": "multiple-choice",
+      "question": "What does the <em> tag do to the enclosed text?",
+      "options": [
+        "Displays it in bold",
+        "Displays it in italic",
+        "Underlines it",
+        "Strikes through the text"
+      ],
+      "correctAnswer": 1,
+      "feedback": "The <em> tag emphasizes the text and displays it in italic by default."
+    }
+  ]
+}

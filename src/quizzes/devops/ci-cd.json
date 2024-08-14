@@ -1,0 +1,200 @@
+{
+  "title": "CI/CD Basics and Concepts Quiz",
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple-choice",
+      "question": "What does CI/CD stand for?",
+      "options": [
+        "Continuous Integration / Continuous Development",
+        "Continuous Integration / Continuous Deployment",
+        "Continuous Improvement / Continuous Deployment",
+        "Continuous Integration / Continuous Delivery"
+      ],
+      "correctAnswer": 1,
+      "feedback": "CI/CD stands for Continuous Integration and Continuous Deployment, which are practices in software development for integrating code frequently and automating deployment."
+    },
+    {
+      "id": 2,
+      "type": "multiple-choice",
+      "question": "Which of the following is a key benefit of Continuous Integration?",
+      "options": [
+        "Reduced manual testing",
+        "Early detection of bugs",
+        "Automated deployments",
+        "Frequent feature releases"
+      ],
+      "correctAnswer": 1,
+      "feedback": "One of the key benefits of Continuous Integration is the early detection of bugs, as developers integrate their code frequently and run automated tests."
+    },
+    {
+      "id": 3,
+      "type": "multiple-choice",
+      "question": "What is the primary purpose of a CI/CD pipeline?",
+      "options": [
+        "To manage code versioning",
+        "To automate the build, test, and deployment processes",
+        "To create backups of code",
+        "To facilitate code reviews"
+      ],
+      "correctAnswer": 1,
+      "feedback": "The primary purpose of a CI/CD pipeline is to automate the build, test, and deployment processes, ensuring that code changes are quickly and reliably delivered to production."
+    },
+    {
+      "id": 4,
+      "type": "multiple-choice",
+      "question": "Which tool is commonly used for Continuous Integration?",
+      "options": [
+        "Jenkins",
+        "GitHub",
+        "Docker",
+        "Kubernetes"
+      ],
+      "correctAnswer": 0,
+      "feedback": "Jenkins is one of the most commonly used tools for Continuous Integration, allowing for automated building and testing of code."
+    },
+    {
+      "id": 5,
+      "type": "multiple-choice",
+      "question": "In the context of CI/CD, what does the term 'build' refer to?",
+      "options": [
+        "Writing code",
+        "Compiling and packaging code",
+        "Deploying code to production",
+        "Merging code into the main branch"
+      ],
+      "correctAnswer": 1,
+      "feedback": "In CI/CD, 'build' refers to the process of compiling and packaging the code so it can be deployed to different environments."
+    },
+    {
+      "id": 6,
+      "type": "multiple-choice",
+      "question": "What is Continuous Delivery?",
+      "options": [
+        "The process of writing code continuously",
+        "The practice of releasing software to production manually",
+        "The ability to deploy every change to a production-like environment",
+        "The automation of testing processes"
+      ],
+      "correctAnswer": 2,
+      "feedback": "Continuous Delivery is the practice of ensuring that every change can be deployed to a production-like environment, but the actual deployment is manual."
+    },
+    {
+      "id": 7,
+      "type": "multiple-choice",
+      "question": "What does a successful CI/CD pipeline do after a code commit?",
+      "options": [
+        "Automatically merges the code into the main branch",
+        "Deploys the code to production without any tests",
+        "Runs automated tests, builds the code, and deploys to the target environment",
+        "Generates documentation for the code"
+      ],
+      "correctAnswer": 2,
+      "feedback": "After a code commit, a successful CI/CD pipeline runs automated tests, builds the code, and then deploys it to the specified environment."
+    },
+    {
+      "id": 8,
+      "type": "multiple-choice",
+      "question": "Which of the following is NOT typically part of a CI/CD pipeline?",
+      "options": [
+        "Code compilation",
+        "Automated testing",
+        "Version control",
+        "Deployment"
+      ],
+      "correctAnswer": 2,
+      "feedback": "Version control is crucial for CI/CD, but it is not typically part of the pipeline itself. The pipeline focuses on building, testing, and deploying code."
+    },
+    {
+      "id": 9,
+      "type": "multiple-choice",
+      "question": "What is the main goal of Continuous Deployment?",
+      "options": [
+        "To deploy code manually after testing",
+        "To deploy code only to staging environments",
+        "To automate the deployment of every change that passes the pipeline to production",
+        "To reduce the number of deployments"
+      ],
+      "correctAnswer": 2,
+      "feedback": "The main goal of Continuous Deployment is to automate the deployment of every change that passes the pipeline, ensuring continuous delivery to production."
+    },
+    {
+      "id": 10,
+      "type": "multiple-choice",
+      "question": "What is the role of automated tests in a CI/CD pipeline?",
+      "options": [
+        "To ensure that code meets style guidelines",
+        "To verify that code changes do not break existing functionality",
+        "To manually approve code for deployment",
+        "To generate reports on code quality"
+      ],
+      "correctAnswer": 1,
+      "feedback": "Automated tests in a CI/CD pipeline verify that code changes do not break existing functionality and ensure the stability of the application."
+    },
+    {
+      "id": 11,
+      "type": "multiple-choice",
+      "question": "Which of the following is an example of a Continuous Integration tool?",
+      "options": [
+        "Ansible",
+        "Jenkins",
+        "Terraform",
+        "Docker"
+      ],
+      "correctAnswer": 1,
+      "feedback": "Jenkins is a popular Continuous Integration tool used to automate parts of the software development process."
+    },
+    {
+      "id": 12,
+      "type": "multiple-choice",
+      "question": "What does the term 'pipeline as code' mean in CI/CD?",
+      "options": [
+        "Writing code for pipelines in a specific programming language",
+        "Defining CI/CD pipeline processes in code that can be version controlled",
+        "Deploying code through pipelines",
+        "Creating pipelines that automatically generate code"
+      ],
+      "correctAnswer": 1,
+      "feedback": "'Pipeline as code' refers to defining CI/CD pipeline processes in a scriptable, version-controlled format, which allows for better management and consistency."
+    },
+    {
+      "id": 13,
+      "type": "multiple-choice",
+      "question": "In CI/CD, what is the purpose of a 'staging' environment?",
+      "options": [
+        "To develop new features",
+        "To replicate the production environment for final testing",
+        "To archive old versions of the application",
+        "To train new developers"
+      ],
+      "correctAnswer": 1,
+      "feedback": "A staging environment replicates the production environment and is used for final testing before deployment to production."
+    },
+    {
+      "id": 14,
+      "type": "multiple-choice",
+      "question": "Which of the following is NOT a best practice in CI/CD?",
+      "options": [
+        "Frequent code commits",
+        "Automated testing at every stage",
+        "Manual deployments to production",
+        "Immediate rollback on failure"
+      ],
+      "correctAnswer": 2,
+      "feedback": "Manual deployments to production are generally not considered a best practice in CI/CD, where automation is key to consistency and reliability."
+    },
+    {
+      "id": 15,
+      "type": "multiple-choice",
+      "question": "What is the benefit of using Docker in a CI/CD pipeline?",
+      "options": [
+        "It automatically writes code",
+        "It allows for consistent environments across different stages of the pipeline",
+        "It is a version control tool",
+        "It automates code reviews"
+      ],
+      "correctAnswer": 1,
+      "feedback": "Using Docker in a CI/CD pipeline allows for consistent environments across different stages of the pipeline, ensuring that code runs the same way in development, testing, and production."
+    }
+  ]
+}

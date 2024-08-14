@@ -55,6 +55,12 @@ export default function Header() {
         <div className="flex items-center justify-between">
           <Logo />
           <div className="hidden md:flex items-center space-x-4">
+            <Link
+              href="/quizzes"
+              className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+            >
+              Quizzes
+            </Link>
             <SearchBar />
             {mounted && (
               <button
@@ -87,6 +93,12 @@ export default function Header() {
         {isOpen && (
           <div className="mt-4 md:hidden">
             <SearchBar />
+            <Link
+              href="/quizzes"
+              className="block text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+            >
+              Quizzes
+            </Link>
             {mounted && (
               <button
                 onClick={() =>

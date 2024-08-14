@@ -1,0 +1,195 @@
+{
+  "title": "JavaScript Basics and Concepts Quiz",
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple-choice",
+      "question": "What is the correct way to declare a variable in JavaScript?",
+      "options": [
+        "var x = 5;",
+        "let x = 5;",
+        "const x = 5;",
+        "All of the above"
+      ],
+      "correctAnswer": 3,
+      "feedback": "All of the options are valid ways to declare variables in JavaScript. 'var' is function-scoped, while 'let' and 'const' are block-scoped."
+    },
+    {
+      "id": 2,
+      "type": "multiple-choice",
+      "question": "Which of the following is a way to create a function in JavaScript?",
+      "options": [
+        "function myFunction() {}",
+        "const myFunction = function() {};",
+        "const myFunction = () => {};",
+        "All of the above"
+      ],
+      "correctAnswer": 3,
+      "feedback": "All of these are valid ways to create a function in JavaScript: function declaration, function expression, and arrow function."
+    },
+    {
+      "id": 3,
+      "type": "multiple-choice",
+      "question": "How do you add a single-line comment in JavaScript?",
+      "options": [
+        "// This is a comment",
+        "<!-- This is a comment -->",
+        "# This is a comment",
+        "/* This is a comment */"
+      ],
+      "correctAnswer": 0,
+      "feedback": "Single-line comments in JavaScript are created using '//'."
+    },
+    {
+      "id": 4,
+      "type": "multiple-choice",
+      "question": "What will be the output of the following code: console.log(typeof null);",
+      "options": [
+        "\"null\"",
+        "\"object\"",
+        "\"undefined\"",
+        "\"number\""
+      ],
+      "correctAnswer": 1,
+      "feedback": "In JavaScript, 'null' is an object type due to a historical bug in the language."
+    },
+    {
+      "id": 5,
+      "type": "multiple-choice",
+      "question": "Which of the following is NOT a JavaScript data type?",
+      "options": [
+        "String",
+        "Boolean",
+        "Character",
+        "Number"
+      ],
+      "correctAnswer": 2,
+      "feedback": "JavaScript does not have a 'Character' data type. Strings, Booleans, and Numbers are valid data types."
+    },
+    {
+      "id": 6,
+      "type": "multiple-choice",
+      "question": "What does the '===' operator do in JavaScript?",
+      "options": [
+        "Compares both value and type",
+        "Compares only value",
+        "Assigns a value",
+        "None of the above"
+      ],
+      "correctAnswer": 0,
+      "feedback": "The '===' operator checks both the value and the type of the operands for equality."
+    },
+    {
+      "id": 7,
+      "type": "multiple-choice",
+      "question": "Which method is used to convert a JSON string into a JavaScript object?",
+      "options": [
+        "JSON.parse()",
+        "JSON.stringify()",
+        "JSON.convert()",
+        "JSON.toObject()"
+      ],
+      "correctAnswer": 0,
+      "feedback": "JSON.parse() is used to parse a JSON string and convert it into a JavaScript object."
+    },
+    {
+      "id": 8,
+      "type": "multiple-choice",
+      "question": "Which keyword is used to skip an iteration in a loop?",
+      "options": [
+        "skip",
+        "break",
+        "continue",
+        "pass"
+      ],
+      "correctAnswer": 2,
+      "feedback": "The 'continue' keyword skips the current iteration and moves to the next iteration in the loop."
+    },
+    {
+      "id": 9,
+      "type": "multiple-choice",
+      "question": "What does 'NaN' stand for in JavaScript?",
+      "options": [
+        "Not a Number",
+        "Not a Null",
+        "Number and Null",
+        "None of the above"
+      ],
+      "correctAnswer": 0,
+      "feedback": "NaN stands for 'Not a Number' and represents a value that is not a legal number."
+    },
+    {
+      "id": 10,
+      "type": "multiple-choice",
+      "question": "Which array method adds one or more elements to the end of an array?",
+      "options": [
+        "push()",
+        "pop()",
+        "shift()",
+        "unshift()"
+      ],
+      "correctAnswer": 0,
+      "feedback": "The push() method adds one or more elements to the end of an array."
+    },
+    {
+      "id": 11,
+      "type": "multiple-choice",
+      "question": "What is the output of 'console.log(2 + '2');'?",
+      "options": ["22", "4", "\"22\"", "\"4\""],
+      "correctAnswer": 2,
+      "feedback": "In JavaScript, the + operator between a number and a string results in string concatenation, hence '22'."
+    },
+    {
+      "id": 12,
+      "type": "multiple-choice",
+      "question": "Which of the following is NOT a loop structure in JavaScript?",
+      "options": [
+        "for",
+        "while",
+        "do-while",
+        "foreach"
+      ],
+      "correctAnswer": 3,
+      "feedback": "'foreach' is not a loop structure. JavaScript uses 'forEach', which is a method, not a loop structure."
+    },
+    {
+      "id": 13,
+      "type": "multiple-choice",
+      "question": "Which of the following is used to handle exceptions in JavaScript?",
+      "options": [
+        "try-catch",
+        "try-except",
+        "catch-throw",
+        "error-handling"
+      ],
+      "correctAnswer": 0,
+      "feedback": "The try-catch block is used to handle exceptions in JavaScript."
+    },
+    {
+      "id": 14,
+      "type": "multiple-choice",
+      "question": "What is the purpose of the 'return' statement in a function?",
+      "options": [
+        "To stop the execution of a function",
+        "To pass a value back to the function's caller",
+        "To debug the code",
+        "To skip the next iteration in a loop"
+      ],
+      "correctAnswer": 1,
+      "feedback": "The 'return' statement stops the function execution and returns a value to the function's caller."
+    },
+    {
+      "id": 15,
+      "type": "multiple-choice",
+      "question": "What will be the output of 'Boolean(0)'?",
+      "options": [
+        "true",
+        "false",
+        "0",
+        "undefined"
+      ],
+      "correctAnswer": 1,
+      "feedback": "In JavaScript, the Boolean function returns 'false' for 0."
+    }
+  ]
+}

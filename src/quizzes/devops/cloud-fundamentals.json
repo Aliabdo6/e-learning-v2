@@ -1,0 +1,190 @@
+{
+  "title": "Cloud Fundamentals Quiz",
+  "questions": [
+    {
+      "id": 1,
+      "type": "multiple-choice",
+      "question": "What is cloud computing?",
+      "options": [
+        "A way to store data on physical servers",
+        "Delivery of computing services over the internet",
+        "A programming language for web development",
+        "A type of networking protocol"
+      ],
+      "correctAnswer": 1,
+      "feedback": "Cloud computing refers to the delivery of computing services—such as storage, servers, databases, networking, software, and analytics—over the internet."
+    },
+    {
+      "id": 2,
+      "type": "multiple-choice",
+      "question": "Which of the following is a key benefit of cloud computing?",
+      "options": [
+        "High initial costs",
+        "Limited scalability",
+        "On-demand resource availability",
+        "Complicated maintenance"
+      ],
+      "correctAnswer": 2,
+      "feedback": "One of the key benefits of cloud computing is on-demand resource availability, allowing users to access and scale resources as needed."
+    },
+    {
+      "id": 3,
+      "type": "multiple-choice",
+      "question": "What is IaaS in cloud computing?",
+      "options": [
+        "Internet as a Service",
+        "Infrastructure as a Service",
+        "Integration as a Service",
+        "Information as a Service"
+      ],
+      "correctAnswer": 1,
+      "feedback": "IaaS stands for Infrastructure as a Service, where cloud providers offer virtualized computing resources over the internet."
+    },
+    {
+      "id": 4,
+      "type": "multiple-choice",
+      "question": "Which type of cloud service model provides software applications over the internet?",
+      "options": ["IaaS", "PaaS", "SaaS", "FaaS"],
+      "correctAnswer": 2,
+      "feedback": "SaaS, or Software as a Service, provides software applications over the internet, allowing users to access them via a web browser."
+    },
+    {
+      "id": 5,
+      "type": "multiple-choice",
+      "question": "What is a public cloud?",
+      "options": [
+        "A cloud environment owned and operated by a single organization",
+        "A cloud service available to the general public over the internet",
+        "A private network used within a company",
+        "A secure network for government use"
+      ],
+      "correctAnswer": 1,
+      "feedback": "A public cloud is a cloud service offered to the general public over the internet, typically owned and operated by a cloud service provider."
+    },
+    {
+      "id": 6,
+      "type": "multiple-choice",
+      "question": "Which cloud model combines private and public clouds?",
+      "options": [
+        "Community Cloud",
+        "Hybrid Cloud",
+        "Multicloud",
+        "Private Cloud"
+      ],
+      "correctAnswer": 1,
+      "feedback": "A Hybrid Cloud model combines private and public clouds, allowing data and applications to be shared between them."
+    },
+    {
+      "id": 7,
+      "type": "multiple-choice",
+      "question": "Which of the following is an example of a cloud computing platform?",
+      "options": [
+        "Linux",
+        "AWS",
+        "GitHub",
+        "MySQL"
+      ],
+      "correctAnswer": 1,
+      "feedback": "AWS (Amazon Web Services) is an example of a cloud computing platform that offers a range of cloud services."
+    },
+    {
+      "id": 8,
+      "type": "multiple-choice",
+      "question": "What is the purpose of a Virtual Machine (VM) in cloud computing?",
+      "options": [
+        "To serve as a physical server",
+        "To enable multiple OS environments on a single hardware platform",
+        "To store data",
+        "To provide internet access"
+      ],
+      "correctAnswer": 1,
+      "feedback": "A Virtual Machine (VM) enables multiple operating system environments to run on a single hardware platform, which is fundamental in cloud computing."
+    },
+    {
+      "id": 9,
+      "type": "multiple-choice",
+      "question": "What does 'scalability' mean in cloud computing?",
+      "options": [
+        "The ability to decrease resources in a cloud environment",
+        "The ability to move data between cloud providers",
+        "The ability to handle growing amounts of work by adding resources",
+        "The ability to customize cloud services"
+      ],
+      "correctAnswer": 2,
+      "feedback": "Scalability in cloud computing refers to the ability to handle growing amounts of work by adding resources, such as more servers or storage."
+    },
+    {
+      "id": 10,
+      "type": "multiple-choice",
+      "question": "Which cloud deployment model offers the highest level of security and control?",
+      "options": [
+        "Public Cloud",
+        "Private Cloud",
+        "Hybrid Cloud",
+        "Community Cloud"
+      ],
+      "correctAnswer": 1,
+      "feedback": "A Private Cloud offers the highest level of security and control as it is dedicated to a single organization and can be managed internally."
+    },
+    {
+      "id": 11,
+      "type": "multiple-choice",
+      "question": "What does 'PaaS' stand for?",
+      "options": [
+        "Platform as a Service",
+        "Private as a Service",
+        "Product as a Service",
+        "Process as a Service"
+      ],
+      "correctAnswer": 0,
+      "feedback": "PaaS stands for Platform as a Service, which provides a platform allowing customers to develop, run, and manage applications without dealing with the underlying infrastructure."
+    },
+    {
+      "id": 12,
+      "type": "multiple-choice",
+      "question": "Which type of cloud service model provides hardware and networking resources?",
+      "options": ["SaaS", "IaaS", "PaaS", "DaaS"],
+      "correctAnswer": 1,
+      "feedback": "IaaS, or Infrastructure as a Service, provides hardware and networking resources such as servers, storage, and load balancers."
+    },
+    {
+      "id": 13,
+      "type": "multiple-choice",
+      "question": "What is cloud migration?",
+      "options": [
+        "The process of moving applications and data from on-premises infrastructure to the cloud",
+        "The process of switching between cloud service providers",
+        "The process of scaling cloud resources",
+        "The process of developing new cloud-native applications"
+      ],
+      "correctAnswer": 0,
+      "feedback": "Cloud migration involves moving applications, data, and workloads from on-premises infrastructure to the cloud."
+    },
+    {
+      "id": 14,
+      "type": "multiple-choice",
+      "question": "Which of the following is a common use case for cloud storage?",
+      "options": [
+        "Hosting a website",
+        "Real-time data processing",
+        "Data backup and recovery",
+        "Developing mobile applications"
+      ],
+      "correctAnswer": 2,
+      "feedback": "Cloud storage is commonly used for data backup and recovery, providing a secure and scalable way to store and retrieve data."
+    },
+    {
+      "id": 15,
+      "type": "multiple-choice",
+      "question": "What is the role of a Cloud Service Provider (CSP)?",
+      "options": [
+        "To manage an organization's on-premises IT infrastructure",
+        "To offer cloud-based services and infrastructure",
+        "To develop custom software solutions",
+        "To provide internet access"
+      ],
+      "correctAnswer": 1,
+      "feedback": "A Cloud Service Provider (CSP) offers cloud-based services and infrastructure, allowing organizations to leverage cloud computing resources."
+    }
+  ]
+}
