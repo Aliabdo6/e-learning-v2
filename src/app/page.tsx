@@ -1,4 +1,5 @@
 import CourseList from "@/components/CourseList";
+import HeroSection from "@/components/HeroSection";
 import {
   getCourseCategories,
   getCourses,
@@ -19,6 +20,9 @@ export default function Home() {
         </span>{" "}
         Platform
       </h1>
+      <div>
+        <HeroSection />
+      </div>
       {categories.map((category) => (
         <section key={category} className="mb-12">
           <h2 className="text-2xl font-semibold mb-4 capitalize">
