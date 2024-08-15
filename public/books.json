@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "title": "JavaScript: The Good Parts",
+    "author": "Douglas Crockford",
+    "description": "This book provides a developer's view of the language, covering the good parts and avoiding the bad ones.",
+    "image": "/books/597e46de24369e04307fed64d22062a8.jpg",
+    "pdfUrl": "/books/notation_example.pdf"
+  },
+  {
+    "id": 2,
+    "title": "Clean Code",
+    "author": "Robert C. Martin",
+    "description": "This book is a must for any developer, software engineer, project manager, team lead, or systems analyst with an interest in producing better code.",
+    "image": "/books/d029d7482ba0d8f7ae5a8d9778905e0d.jpg",
+    "pdfUrl": "/books/Saudi-Entertainment-Trends.pdf"
+  }
+]
