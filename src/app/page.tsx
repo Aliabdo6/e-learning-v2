@@ -1,12 +1,17 @@
 import { CallToAction } from "@/components/CallToAction";
 import CourseList from "@/components/CourseList";
+import FAQSection from "@/components/FAQSection";
 import FeaturedSection from "@/components/FeaturedSection";
 import { LearningPathways } from "@/components/LearningPathways";
+import PricingSection from "@/components/PricingSection";
 import { TestimonialSection } from "@/components/TestimonialSection";
+import TimelineSection from "@/components/TimelineSection";
+import UpcomingFeaturesSection from "@/components/UpcomingFeaturesSection";
 import {
   getCourseCategories,
   getCourses,
 } from "@/lib/api";
+import { motion } from "framer-motion";
 
 export default function Home() {
   const categories = getCourseCategories();
@@ -41,8 +46,14 @@ export default function Home() {
           </section>
         ))}
       </div>
+
+      <PricingSection />
       <LearningPathways />
       <FeaturedSection />
+      <UpcomingFeaturesSection />
+      <TimelineSection />
+      <FAQSection />
+
       <TestimonialSection />
       <CallToAction />
     </>

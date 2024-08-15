@@ -21,7 +21,7 @@ export const TestimonialSection = () => {
   ];
 
   return (
-    <section className="container mx-auto px-4 py-4 ">
+    <section className="container mx-auto px-4 py-6 ">
       <h2 className="text-3xl font-bold text-center mb-12 dark:text-white">
         What Our Learners Say
       </h2>

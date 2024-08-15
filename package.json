@@ -11,6 +11,7 @@
   "dependencies": {
     "@clerk/nextjs": "^5.3.1",
     "@tailwindcss/typography": "^0.5.14",
+    "framer-motion": "^11.3.28",
     "gray-matter": "^4.0.3",
     "mongodb": "^6.8.0",
     "mongoose": "^8.5.3",
