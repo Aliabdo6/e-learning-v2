@@ -1,1 +1,4 @@
-{"title": "Docker", "description": "Learn about containerization and how to use Docker for application deployment."}
+{
+  "title": "Docker Fundamentals",
+  "description": "A comprehensive course covering all the fundamental concepts of docker, from basics to advanced topics."
+}
