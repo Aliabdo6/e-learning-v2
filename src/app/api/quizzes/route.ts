@@ -1,5 +1,3 @@
-// src/app/api/quizzes/route.ts
-
 import { NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
