@@ -4,16 +4,27 @@
 
 ## Overview
 
-This lesson focuses on object detection using the YOLO (You Only Look Once) algorithm, a state-of-the-art real-time object detection system. We will cover the following topics: - **YOLO Architecture**: Understanding the YOLO model and its components.
+This lesson focuses on object detection using the **YOLO (You Only Look Once)** algorithm, a state-of-the-art real-time object detection system.  
+We will cover the following topics:
 
-<img src="https://i.pinimg.com/736x/2c/20/62/2c2062ece079e50a87a377b7cf79122b.jpg" alt="Italian Trulli">
+- **YOLO Architecture**: Understanding the YOLO model and its components.
+- **Training YOLO**: How to train a YOLO model on custom datasets.
+- **Real-time Object Detection**: Implementing YOLO for real-time object detection tasks.
 
-<img src="https://i.pinimg.com/736x/c3/ce/15/c3ce15d5760400f86089a5caa7fdd3da.jpg" alt="Italian Trulli">
+---
 
-<img src="https://i.pinimg.com/736x/31/b4/c9/31b4c94d541327bce0a922e7045c113e.jpg" alt="Italian Trulli">
+## YOLO Architecture Visuals
 
-<!-- <video src width="320" height="240" autoplay muted /> -->
+<img src="https://i.pinimg.com/736x/2c/20/62/2c2062ece079e50a87a377b7cf79122b.jpg" alt="YOLO Architecture Image 1">
+
+<img src="https://i.pinimg.com/736x/c3/ce/15/c3ce15d5760400f86089a5caa7fdd3da.jpg" alt="YOLO Architecture Image 2">
+
+<img src="https://i.pinimg.com/736x/31/b4/c9/31b4c94d541327bce0a922e7045c113e.jpg" alt="YOLO Architecture Image 3">
+
+---
+
+## YOLO in Action
+
+> **Note:** Direct video embedding from YouTube is not supported in Markdown alone. The following tag is HTML and works in environments like Jupyter Notebook or web-rendered Markdown:
 
 <video src="https://www.youtube.com/watch?v=2c2062ece079e50a87a377b7cf79122b" width="320" height="240" autoplay muted controls></video>
-
-- **Training YOLO**: How to train a YOLO model on custom datasets. - **Real-time Object Detection**: Implementing YOLO for real-time object detection tasks.
