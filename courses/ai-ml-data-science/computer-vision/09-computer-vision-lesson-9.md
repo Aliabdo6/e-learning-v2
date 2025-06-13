@@ -6,10 +6,14 @@
 
 This lesson focuses on object detection using the YOLO (You Only Look Once) algorithm, a state-of-the-art real-time object detection system. We will cover the following topics: - **YOLO Architecture**: Understanding the YOLO model and its components.
 
-<img src="https://th.bing.com/th/id/OIP.X3jDS9J58Q4ilo4vgjh-RAHaE5?rs=1&pid=ImgDetMain" alt="Italian Trulli">
+<img src="https://i.pinimg.com/736x/2c/20/62/2c2062ece079e50a87a377b7cf79122b.jpg" alt="Italian Trulli">
 
-<video width="320" height="240" autoplay muted>
-  <source src="https://youtu.be/G2oY4bAFKQQ" type="video/mp4">
-  <source src="https://youtu.be/G2oY4bAFKQQ" type="video/ogg">
-Your browser does not support the video tag.
-</video>
+<img src="https://i.pinimg.com/736x/c3/ce/15/c3ce15d5760400f86089a5caa7fdd3da.jpg" alt="Italian Trulli">
+
+<img src="https://i.pinimg.com/736x/31/b4/c9/31b4c94d541327bce0a922e7045c113e.jpg" alt="Italian Trulli">
+
+<!-- <video src width="320" height="240" autoplay muted /> -->
+
+<video src="https://www.youtube.com/watch?v=2c2062ece079e50a87a377b7cf79122b" width="320" height="240" autoplay muted controls></video>
+
+- **Training YOLO**: How to train a YOLO model on custom datasets. - **Real-time Object Detection**: Implementing YOLO for real-time object detection tasks.
